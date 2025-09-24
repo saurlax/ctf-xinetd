@@ -17,11 +17,11 @@ docker build -t hello-pwn .
 ## Run
 
 ```bash
-docker run -d -p 9999:9999 -e FLAG="flag{test_flag}" hello-pwn
+docker run -d -p 3000:3000 -e FLAG="flag{test_flag}" hello-pwn
 ```
 
 ## Capture traffic
 
 ```bash
-tcpdump -w hello-pwn.pcap -i eth0 port 9999
+tcpdump -w hello-pwn.pcap -i eth0 port 3000
 ```
