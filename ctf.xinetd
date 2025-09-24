@@ -1,0 +1,14 @@
+service ctf
+{
+    disable     = no
+    type        = UNLISTED
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = root
+    port        = 3000
+    bind        = 0.0.0.0
+    server      = /root/pwn
+    # per_source  = 10
+    # rlimit_cpu  = 20
+}
